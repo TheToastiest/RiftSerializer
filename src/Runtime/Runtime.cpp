@@ -1,0 +1,9 @@
+﻿#include "../../include/Traits/Traits.h"
+#include "../../include/Common/Common.h"
+#include "../../include/Types/Types.h"
+#include "../../include/Accessor/Accessor.h"
+#include "../../include/Builder/Builder.h"
+
+int main() {
+	return 0;
+}
