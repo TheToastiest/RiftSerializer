@@ -32,4 +32,15 @@ namespace RiftSerializer {
     static_assert(sizeof(OffsetTableEntry) == 8, "OffsetTableEntry must be 8 bytes.");
     static_assert(alignof(OffsetTableEntry) == 4, "OffsetTableEntry must be 4-byte aligned.");
 
+    // --- NEW: Entry for Union Types ---
+    // Represents a field that can be one of several types.
+    struct alignas(4) UnionEntry {
+        uint8 type_id; // The ID of the type stored (maps to a generated enum). 0 means NONE.
+        uint8 _padding[3]; // Pad to 4 bytes.
+        uint32 offset; // Offset from the start of the object to the union's data.
+    };
+    static_assert(sizeof(UnionEntry) == 8, "UnionEntry must be 8 bytes.");
+    static_assert(alignof(UnionEntry) == 4, "UnionEntry must be 4-byte aligned.");
+
+
 } // namespace RiftSerializer
