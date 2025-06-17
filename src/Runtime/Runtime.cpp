@@ -3,7 +3,3 @@
 #include "../../include/Types/Types.h"
 #include "../../include/Accessor/Accessor.h"
 #include "../../include/Builder/Builder.h"
-
-int main() {
-	return 0;
-}

@@ -9,6 +9,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Generated">
+      <UniqueIdentifier>{97b0750b-7c23-4c5e-8652-82a382ae9daf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Accessor\Accessor.h">
@@ -29,8 +32,18 @@
     <ClInclude Include="include\Types\Types.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="include\RiftSerializer\RiftSerialier.h">
-      <Filter>include</Filter>
+    <ClInclude Include="RiftSerializer.h" />
+    <ClInclude Include="x64\Debug\Generated\DebugEvent.h">
+      <Filter>Generated</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\Generated\DebugLine.h">
+      <Filter>Generated</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\Generated\DebugSphere.h">
+      <Filter>Generated</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\Generated\Entity_State.h">
+      <Filter>Generated</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

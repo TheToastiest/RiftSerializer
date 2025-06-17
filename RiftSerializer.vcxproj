@@ -109,7 +109,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>C:\project_includes\spdlog-1.x\build\install\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\project_includes\spdlog-1.x\build\install\include\;C:\project_includes\glm-master\build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -139,9 +139,13 @@
     <ClInclude Include="include\Builder\Builder.h" />
     <ClInclude Include="include\Common\Common.h" />
     <ClInclude Include="include\Generated\Schema_IDL_Name.h" />
-    <ClInclude Include="include\RiftSerializer\RiftSerialier.h" />
     <ClInclude Include="include\Traits\Traits.h" />
     <ClInclude Include="include\Types\Types.h" />
+    <ClInclude Include="RiftSerializer.h" />
+    <ClInclude Include="x64\Debug\Generated\DebugEvent.h" />
+    <ClInclude Include="x64\Debug\Generated\DebugLine.h" />
+    <ClInclude Include="x64\Debug\Generated\DebugSphere.h" />
+    <ClInclude Include="x64\Debug\Generated\Entity_State.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Runtime\Runtime.cpp" />
